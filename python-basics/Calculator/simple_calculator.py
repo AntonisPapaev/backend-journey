@@ -1,5 +1,8 @@
 # Simple Calculator
+
+# Finds the operator used and returns the new result
 def calculate(a , op , b):
+    # Check for correct operator
     if (op == '+'):
         a += b
         return a
@@ -27,7 +30,7 @@ b = float(input ("Give Second number: "))
 
 print(calculate(a , op , b))
 
-conti = input ("Do you want to continue? (y/n): ").lower()
+conti = input ("Do you want to continue? (y/n): ").lower() 
 while (conti == 'y'):
     op = input ("Give the equation op: ")
     b = float(input ("Give number: "))
